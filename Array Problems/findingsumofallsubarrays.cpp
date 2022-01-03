@@ -1,24 +1,32 @@
 #include<iostream>
 using namespace std;
-void getSumofSubarray(int arr[],int n)
+int getLargestsumofSubarray(int arr[],int n)
 {
-    int i,j,k,sum=0;
+    int i,j,k;
+    int largest_sum=0;
     for(i=0;i<n;i++)
     {
+        
         for(j=i;j<n;j++)
         {
+            int sum=0;
             for(k=i;k<=j;k++)
             { 
-                sum=sum+arr[i]+arr[j];
+                sum+=arr[k];
             }
+            largest_sum=max(largest_sum,sum);
+             
+        }  
 
-        }
     }
 
+    return largest_sum;
 }
 int main()
 {
-    int arr[]={10,20,30,40,50};
+    int arr[]={1,2,3,4,5};
     int n=sizeof(arr)/sizeof(int);
-    getSumofSubarray(arr,n);
+    cout<<"The largest sum is:"<<endl;
+    cout<<getLargestsumofSubarray(arr,n)<<endl;
+
 }
