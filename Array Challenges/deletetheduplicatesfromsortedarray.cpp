@@ -23,8 +23,13 @@ int removeDuplicates(int a[],int n)
 }
 int main()
 {
-    int arr[]={1,1,1,2,2,3,4};
-    int n=sizeof(arr)/sizeof(int);
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
     int len=removeDuplicates(arr,n);
     int i;
     cout<<"Array after removing duplicates:"<<endl;
