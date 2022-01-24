@@ -14,7 +14,7 @@ int main()
     int pd=a[1]-a[0];
     if(n==0)
     {
-        cout<<"Insufficient number of elements.\n"<<endl;
+        cout<<"Insufficient number of elements.\n"<<endl; //the minimum no of elements in an array is 2
         return 0;
 
     }
