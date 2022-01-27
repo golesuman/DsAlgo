@@ -1,3 +1,7 @@
+/*Kadane's algorithm is used to find the maximum sub array sum and it works on bigOH of n i.e 0(N).
+In this algorithm we calculate the sum and take the maximum sum. If the sum becomes less than zero then
+we initialize the sum to zero and work for another subarray which doesn't equal to less than zero*/
+
 #include<iostream>
 using namespace std;
 int MaxSubarraySum(int arr[],int n)
