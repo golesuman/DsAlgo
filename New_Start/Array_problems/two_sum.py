@@ -5,7 +5,7 @@ def pairSum(arr, Sum):
     
     for num in arr:
         x = Sum - num
-        if x in arr:
+        if x in a:
             result.append(num)
             result.append(x)
             return result
